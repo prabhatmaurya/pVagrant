@@ -2,6 +2,10 @@
 ################
 .vagrant
 
+# Fabric Cache #
+################
+*.pyc
+
 # Compiled source #
 ###################
 *.com
