@@ -1,1 +1,8 @@
-python_vagrant PyYAML SpeechRecognition PyAudio pocketsphinx
+python_vagrant
+PyYAML
+SpeechRecognition
+PyAudio
+pocketsphinx
+gTTS
+urllib3
+requests

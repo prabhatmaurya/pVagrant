@@ -8,10 +8,10 @@ def vm_deploy(vagrant_file='.',machine_name=[]):
     v = vagrant.Vagrant(vagrant_file)
     if machine_name:
         for i in machine_name:
+            print "Deploying machine %s" % i
             v.up(vm_name=i)
     else:
         v.up()
-    vm_machine_list(vagrant_file)
 
 def vm_destroy(vagrant_file='.',machine_name=''):
     v = vagrant.Vagrant(vagrant_file)
@@ -19,7 +19,11 @@ def vm_destroy(vagrant_file='.',machine_name=''):
 
 def vm_status(vagrant_file='.',machine_name=''):
     v = vagrant.Vagrant(vagrant_file)
-    status = v.status()
+    status = []
+    try:
+        status = v.status()
+    except Exception as e:
+        print e
     return status
 
 def vm_machine_list(vagrant_file='.'):
