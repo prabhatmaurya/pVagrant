@@ -11,7 +11,7 @@ Configuration
     $ mkdir workdir
     $ cd workdir
     $ git clone https://github.com/prabhatmaurya/pVagrant.git
-    $ cd ch4
+    $ cd pVagrant/ch4/
     $ vagrant up
 ~~~~~~~~~~~~~
 
