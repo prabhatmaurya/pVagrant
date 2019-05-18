@@ -1,5 +1,5 @@
 **Storage Versioning**
-$ export storage_name=<name of storage bucket>
+$ export storage_name=_name of storage bucket_
 ## Get staus of bicket versioning
 $ gsutil versioning get gs://$storage
 ## Enable versioning
