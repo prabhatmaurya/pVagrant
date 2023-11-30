@@ -1,0 +1,8 @@
+---  
+- name: Verify passwordless ssh
+  ansible.builtin.include_tasks: 
+    file: check-access.yaml
+
+- name: Setup Passwordless ssh and sudo env
+  ansible.builtin.include_tasks: 
+    file: setup-tasks.yaml
